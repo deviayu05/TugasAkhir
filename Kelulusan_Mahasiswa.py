@@ -141,6 +141,19 @@ prediction = load_model.predict(inputan)
 graduation = np.array(['ON TIME','LATE'])
 #st.write(graduation)
 
-st.subheader('''Prediction Results (Classification)''')
-st.subheader('''Time of Student Graduation''')
-st.write(graduation[prediction])
+#st.subheader('''Prediction Results (Classification)''')
+#st.subheader('''Time of Student Graduation''')
+#st.write(graduation[prediction])
+
+st.subheader('Prediction Results')
+hasil = graduation[prediction][0]
+
+st.success(f'Hasil Prediksi: {hasil}')
+
+if hasil == 'ON TIME':
+    st.image('sad.png', width=250)
+    st.balloons()
+
+elif hasil == 'LATE':
+    st.image('sad.png', width=250)
+    st.error('Prediksi kelulusan terlambat')
