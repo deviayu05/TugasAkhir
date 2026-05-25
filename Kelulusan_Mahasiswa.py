@@ -12,9 +12,9 @@ from sklearn.ensemble import RandomForestClassifier
 #Web-based application for predicting (classifying) Graduation Timeliness of Informatics Engineering Students, UDINUS""")
 st.write("""Classification of Student Graduation (Web Apps)""")
 
-#img = Image.open('graduation.png')
-#img = img.resize((500,500))
-#st.image(img, use_column_width=False)
+img = Image.open('graduation1.png')
+img = img.resize((500,500))
+st.image(img, use_column_width=False)
 
 # Upload File Excel untuk parameter inputan
 st.sidebar.header('Upload your Excel file')
