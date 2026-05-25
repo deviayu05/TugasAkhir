@@ -70,7 +70,7 @@ else:
 
         data = {'gender' : gender,
                 'age' : age,
-                'pathways' : pathways,
+                'jalur_penerimaan' : jalur_penerimaan,
                 'ips1' : ips1,
                 'ips2' : ips2,
                 'ips3' : ips3,
@@ -82,7 +82,7 @@ else:
                 'ips9' : ips9,
                 'ips10' : ips10,
                 'marital' : marital,
-                'achievement' : achievement}
+                'prestasi' : prestasi}
         fitur = pd.DataFrame(data, index=[0])
         return fitur
     inputan = input_user()
