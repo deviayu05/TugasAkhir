@@ -68,21 +68,23 @@ else:
             achievement = st.selectbox('Achievement', ('0', '1'))
             st.caption("0 = Have, 1 = Don't Have")
 
-        data = {'gender' : gender,
-                'age' : age,
-                'jalur_penerimaan' : jalur_penerimaan,
-                'ips1' : ips1,
-                'ips2' : ips2,
-                'ips3' : ips3,
-                'ips4' : ips4,
-                'ips5' : ips5,
-                'ips6' : ips6,
-                'ips7' : ips7,
-                'ips8' : ips8,
-                'ips9' : ips9,
-                'ips10' : ips10,
-                'marital' : marital,
-                'prestasi' : prestasi}
+        data = {
+            'gender': gender,
+            'age': age,
+            'jalur_penerimaan': pathways,
+            'ips1': ips1,
+            'ips2': ips2,
+            'ips3': ips3,
+            'ips4': ips4,
+            'ips5': ips5,
+            'ips6': ips6,
+            'ips7': ips7,
+            'ips8': ips8,
+            'ips9': ips9,
+            'ips10': ips10,
+            'marital': marital,
+            'prestasi': achievement
+        }
         fitur = pd.DataFrame(data, index=[0])
         return fitur
     inputan = input_user()
