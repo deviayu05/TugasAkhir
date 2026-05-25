@@ -145,7 +145,11 @@ graduation = np.array(['ON TIME','LATE'])
 #st.subheader('''Time of Student Graduation''')
 #st.write(graduation[prediction])
 
+# Ambil hasil prediksi
+hasil = graduation[prediction][0]
 
+# Tampilkan hasil
+st.subheader('Prediction Results')
 
 #st.success(f'Hasil Prediksi: {hasil}')
 if hasil == 'ON TIME':
