@@ -121,13 +121,13 @@ students_graduation = students_graduation_raw.drop(columns=['label_kelulusan'])
 df = pd.concat([inputan, students_graduation], axis=0)
 
 # Menampilkan parameter hasil inputan
-st.subheader('Parameter of Input')
+#st.subheader('Parameter of Input')
 
-if upload_file is not None:
-    st.write(df)
-else:
-    st.write('Waiting for the excel file to upload..')
-    st.write(df)
+#if upload_file is not None:
+ #   st.write(df)
+#else:
+ #   st.write('Waiting for the excel file to upload..')
+  #  st.write(df)
 
 # Load save model
 # load_model = pickle.load(open('Graduation_Model.pkl', 'rb'))
