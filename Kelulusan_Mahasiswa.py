@@ -73,14 +73,14 @@ else:
             ips5 = st.number_input('IPS 5', min_value=0.00, max_value=4.00)
         with col5:
             ips6 = st.number_input('IPS 6', min_value=0.00, max_value=4.00)
-        with col3:
-            ips7 = st.number_input('IPS 7', min_value=0.00, max_value=4.00)
-        with col4:
-            ips8 = st.number_input('IPS 8', min_value=0.00, max_value=4.00)
-        with col3:
-            ips9 = st.number_input('IPS 9', min_value=0.00, max_value=4.00)
-        with col4:
-            ips10 = st.number_input('IPS 10', min_value=0.00, max_value=4.00)
+        #with col3:
+         #   ips7 = st.number_input('IPS 7', min_value=0.00, max_value=4.00)
+        #with col4:
+            #ips8 = st.number_input('IPS 8', min_value=0.00, max_value=4.00)
+        #with col3:
+            #ips9 = st.number_input('IPS 9', min_value=0.00, max_value=4.00)
+        #with col4:
+            #ips10 = st.number_input('IPS 10', min_value=0.00, max_value=4.00)
         
         with col1:
             #marital = st.selectbox('Marital', ('0', '1'))
@@ -157,7 +157,7 @@ graduation = np.array(['ON TIME','LATE'])
 hasil = graduation[prediction][0]
 
 # Tampilkan hasil
-st.subheader('Prediction Results')
+#st.subheader('Prediction Results')
 
 #st.success(f'Hasil Prediksi: {hasil}')
 if hasil == 'ON TIME':
