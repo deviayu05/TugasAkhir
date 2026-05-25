@@ -73,7 +73,7 @@ else:
         data = {
             'gender': gender,
             'age': age,
-            'jalur_penerimaan': pathways,
+            'jalur_penerimaan': jalur_penerimaan,
             'ips1': ips1,
             'ips2': ips2,
             'ips3': ips3,
@@ -85,8 +85,7 @@ else:
             'ips9': ips9,
             'ips10': ips10,
             'marital': marital,
-            'prestasi': achievement
-        }
+            'prestasi': achievement}
         fitur = pd.DataFrame(data, index=[0])
         return fitur
     inputan = input_user()
@@ -110,7 +109,8 @@ else:
 load_model = joblib.load("Graduation_Model.pkl")
 
 # Terapkan Random Forest
-prediction = load_model.predict(df)
+# prediction = load_model.predict(df)
+prediction = load_model.predict(inputan)
 
 #st.subheader('Class Label Description')
 graduation = np.array(['ON TIME','LATE'])
