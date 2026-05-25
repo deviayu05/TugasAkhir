@@ -42,9 +42,15 @@ else:
             st.caption('usia saat melakukan pendaftaran')
 
         with col1:
-            jalur_penerimaan = st.selectbox('Pathways', ('0', '1'))
+            #jalur_penerimaan = st.selectbox('Pathways', ('0', '1'))
             # pathways = st.selectbox('Pathways', ('0', '1'))
-            st.caption('0 = PMDK, 1 = Reguler')
+            #st.caption('0 = PMDK, 1 = Reguler')
+            jalur_text = st.selectbox(
+                'Jalur Penerimaan',
+                ('Beasiswa', 'Reguler')
+            )
+            
+            jalur_penerimaan = 0 if jalur_text == 'PMDK' else 1
 
         col3, col4, col5 = st.sidebar.columns(3)
         with col3:        
@@ -69,12 +75,24 @@ else:
             ips10 = st.number_input('IPS 10', min_value=0.00, max_value=4.00)
         
         with col1:
-            marital = st.selectbox('Marital', ('0', '1'))
-            st.caption('0 = Not Married, 1 = Married')
+            #marital = st.selectbox('Marital', ('0', '1'))
+            #st.caption('0 = Not Married, 1 = Married')
+            marital_text = st.selectbox(
+                'Marital Status',
+                ('Not Married', 'Married')
+            )
+            
+            marital = 0 if marital_text == 'Not Married' else 1
         with col2:
-            prestasi = st.selectbox('Achievement', ('0', '1'))
+            #prestasi = st.selectbox('Achievement', ('0', '1'))
             #achievement = st.selectbox('Achievement', ('0', '1'))
-            st.caption("0 = Have, 1 = Don't Have")
+            #st.caption("0 = Have, 1 = Don't Have")
+            prestasi_text = st.selectbox(
+                'Achievement',
+                ('Have Achievement', 'No Achievement')
+            )
+            
+            prestasi = 0 if prestasi_text == 'Have Achievement' else 1
 
         data = {
             'gender': gender,
@@ -98,9 +116,9 @@ else:
     inputan = input_user()
 
 # Menggabungkan input dan dataset
-students_graduation_raw = pd.read_excel("datamahasiswa.xlsx")
-students_graduation = students_graduation_raw.drop(columns=['label_kelulusan'])
-df = pd.concat([inputan, students_graduation], axis=0)
+#students_graduation_raw = pd.read_excel("datamahasiswa.xlsx")
+#students_graduation = students_graduation_raw.drop(columns=['label_kelulusan'])
+#df = pd.concat([inputan, students_graduation], axis=0)
 
 # Menampilkan parameter hasil inputan
 st.subheader('Parameter of Input')
