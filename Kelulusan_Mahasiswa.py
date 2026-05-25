@@ -36,7 +36,8 @@ else:
             st.caption('usia saat melakukan pendaftaran')
 
         with col1:
-            pathways = st.selectbox('Pathways', ('0', '1'))
+            jalur_penerimaan = st.selectbox('Pathways', ('0', '1'))
+            # pathways = st.selectbox('Pathways', ('0', '1'))
             st.caption('0 = PMDK, 1 = Reguler')
 
         col3, col4, col5 = st.sidebar.columns(3)
@@ -65,7 +66,8 @@ else:
             marital = st.selectbox('Marital', ('0', '1'))
             st.caption('0 = Not Married, 1 = Married')
         with col2:
-            achievement = st.selectbox('Achievement', ('0', '1'))
+            prestasi = st.selectbox('Achievement', ('0', '1'))
+            #achievement = st.selectbox('Achievement', ('0', '1'))
             st.caption("0 = Have, 1 = Don't Have")
 
         data = {
