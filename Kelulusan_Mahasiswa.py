@@ -92,7 +92,7 @@ else:
     inputan = input_user()
 
 # Menggabungkan input dan dataset
-students_graduation_raw = pd.read_excel("studentsdata.xlsx")
+students_graduation_raw = pd.read_excel("datamahasiswa.xlsx")
 students_graduation = students_graduation_raw.drop(columns=['label_kelulusan'])
 df = pd.concat([inputan, students_graduation], axis=0)
 
