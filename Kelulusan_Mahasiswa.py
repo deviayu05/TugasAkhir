@@ -145,13 +145,7 @@ graduation = np.array(['ON TIME','LATE'])
 #st.subheader('''Time of Student Graduation''')
 #st.write(graduation[prediction])
 
-col1, col2, col3 = st.columns([1,2,1])
 
-with col2:
-    st.image('happy2.png', width=250)
-
-st.subheader('Prediction Results')
-hasil = graduation[prediction][0]
 
 #st.success(f'Hasil Prediksi: {hasil}')
 if hasil == 'ON TIME':
@@ -165,7 +159,11 @@ if hasil == 'ON TIME':
         unsafe_allow_html=True
     )
 
-    st.image('happy2.png', width=250)
+    col1, col2, col3 = st.columns([1,2,1])
+
+    with col2:
+        st.image('happy2.png', width=250, use_container_width=False)
+
     st.balloons()
 
 elif hasil == 'LATE':
@@ -179,5 +177,7 @@ elif hasil == 'LATE':
         unsafe_allow_html=True
     )
 
-    st.image('sad2.png', width=250)
-    st.error('Prediksi kelulusan terlambat')
+    col1, col2, col3 = st.columns([1,2,1])
+
+    with col2:
+        st.image('sad2.png', width=250, use_container_width=False)
