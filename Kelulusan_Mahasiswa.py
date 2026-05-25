@@ -101,7 +101,7 @@ else:
     st.write(df)
 
 # Load save model
-load_model = pickle.load(open('Kelulusan_Mahasiswa_Model.pkl', 'rb'))
+load_model = pickle.load(open('KelulusanMahasiswa_Model.pkl', 'rb'))
 
 # Terapkan Random Forest
 prediction = load_model.predict(df)
