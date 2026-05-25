@@ -112,10 +112,10 @@ else:
             'ips4': ips4,
             'ips5': ips5,
             'ips6': ips6,
-            'ips7': ips7,
-            'ips8': ips8,
-            'ips9': ips9,
-            'ips10': ips10,
+            #'ips7': ips7,
+            #'ips8': ips8,
+            #'ips9': ips9,
+            #'ips10': ips10,
             'marital': marital,
             'prestasi': prestasi
         }
