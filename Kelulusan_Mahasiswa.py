@@ -151,9 +151,9 @@ hasil = graduation[prediction][0]
 st.success(f'Hasil Prediksi: {hasil}')
 
 if hasil == 'ON TIME':
-    st.image('sad.png', width=250)
+    st.image('happy2.png', width=250)
     st.balloons()
 
 elif hasil == 'LATE':
-    st.image('sad.png', width=250)
+    st.image('sad2.png', width=250)
     st.error('Prediksi kelulusan terlambat')
