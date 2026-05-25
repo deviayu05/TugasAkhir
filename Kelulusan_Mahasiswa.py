@@ -6,10 +6,10 @@ from PIL import Image
 from sklearn.ensemble import RandomForestClassifier
 
 # tampilan web
-st.write(""" 
+#st.write(""" 
 # Classification of Student Graduation (Web Apps)
-Web-based application for predicting (classifying) Graduation Timeliness of Informatics Engineering Students, UDINUS
-""")
+#Web-based application for predicting (classifying) Graduation Timeliness of Informatics Engineering Students, UDINUS""")
+st.write("""Classification of Student Graduation (Web Apps)""")
 
 #img = Image.open('graduation.png')
 #img = img.resize((500,500))
