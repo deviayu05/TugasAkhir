@@ -73,14 +73,14 @@ else:
             ips5 = st.number_input('IPS 5', min_value=0.00, max_value=4.00)
         with col5:
             ips6 = st.number_input('IPS 6', min_value=0.00, max_value=4.00)
-        #with col3:
-         #   ips7 = st.number_input('IPS 7', min_value=0.00, max_value=4.00)
-        #with col4:
-            #ips8 = st.number_input('IPS 8', min_value=0.00, max_value=4.00)
-        #with col3:
-            #ips9 = st.number_input('IPS 9', min_value=0.00, max_value=4.00)
-        #with col4:
-            #ips10 = st.number_input('IPS 10', min_value=0.00, max_value=4.00)
+        with col3:
+            ips7 = st.number_input('IPS 7', min_value=0.00, max_value=4.00)
+        with col4:
+            ips8 = st.number_input('IPS 8', min_value=0.00, max_value=4.00)
+        with col3:
+            ips9 = st.number_input('IPS 9', min_value=0.00, max_value=4.00)
+        with col4:
+            ips10 = st.number_input('IPS 10', min_value=0.00, max_value=4.00)
         
         with col1:
             #marital = st.selectbox('Marital', ('0', '1'))
@@ -112,10 +112,10 @@ else:
             'ips4': ips4,
             'ips5': ips5,
             'ips6': ips6,
-            #'ips7': ips7,
-            #'ips8': ips8,
-            #'ips9': ips9,
-            #'ips10': ips10,
+            'ips7': ips7,
+            'ips8': ips8,
+            'ips9': ips9,
+            'ips10': ips10,
             'marital': marital,
             'prestasi': prestasi
         }
