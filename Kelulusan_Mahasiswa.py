@@ -10,11 +10,19 @@ from sklearn.ensemble import RandomForestClassifier
 #st.write(""" 
 # Classification of Student Graduation (Web Apps)
 #Web-based application for predicting (classifying) Graduation Timeliness of Informatics Engineering Students, UDINUS""")
-st.write("""Classification of Student Graduation (Web Apps)""")
+#st.write("""Classification of Student Graduation (Web Apps)""")
+st.markdown(
+    """
+    <h1 style='text-align:center; color:#2E8B57;'>
+        🎓 Classification of Student Graduation
+    </h1>
+    """,
+    unsafe_allow_html=True
+)
 
-img = Image.open('graduation1.png')
-img = img.resize((500,500))
-st.image(img, use_column_width=False)
+#img = Image.open('graduation1.png')
+#img = img.resize((500,500))
+#st.image(img, use_column_width=False)
 
 # Upload File Excel untuk parameter inputan
 st.sidebar.header('Upload your Excel file')
