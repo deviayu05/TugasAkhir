@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
+# import pickle
+import joblib
 from PIL import Image
 from sklearn.ensemble import RandomForestClassifier
 
@@ -101,7 +102,8 @@ else:
     st.write(df)
 
 # Load save model
-load_model = pickle.load(open('Graduation_Model.pkl', 'rb'))
+# load_model = pickle.load(open('Graduation_Model.pkl', 'rb'))
+load_model = joblib.load("Graduation_Model.pkl")
 
 # Terapkan Random Forest
 prediction = load_model.predict(df)
