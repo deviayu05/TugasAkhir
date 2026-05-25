@@ -28,8 +28,14 @@ else:
 
         col1, col2 = st.sidebar.columns(2)
         with col1:           
-            gender = st.selectbox('Gender', ('0', '1'))
-            st.caption('0 = Male 1 = Female')
+            #gender = st.selectbox('Gender', ('0', '1'))
+            #st.caption('0 = Male 1 = Female')
+            gender_text = st.selectbox(
+                'Gender',
+                ('Male', 'Female')
+            )
+
+            gender = 0 if gender_text == 'Male' else 1
 
         with col2:
             age = st.number_input('Age', value=0)
